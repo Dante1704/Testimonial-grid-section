@@ -1,0 +1,182 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+main {
+    margin-top: 65px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-gap: 25px;
+}
+
+article {
+    border-radius: 10px;
+    margin-right: 18px;
+    margin-left: 18px;
+    box-shadow: 47px 54px 26px -36px hsl(210deg 18% 82%);
+}
+
+img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.testimonial-container {
+    padding: 32px;
+    padding-top: 26px;
+    padding-bottom: 20px;
+}
+
+.person-data {
+    display: flex;
+}
+
+.data {
+    margin-left: 15px;
+}
+
+.name {
+    font-size: 13px;
+    opacity: 0.8;
+    margin: 0px;
+}
+
+.status {
+    font-size: 11px;
+    opacity: 0.4;
+    margin: 0px;
+}
+
+.phrase {
+    font-size: 20px;
+    opacity: 0.9;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    font-size: 13px;
+    opacity: 0.5;
+    line-height: 1.4;
+    margin-top: 11px;
+    padding-right: 11px;
+}
+
+#daniel-article {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 2px;
+}
+
+
+#jonathan-article {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#jeanette-article {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+#patrick-article {
+    background-color: hsl(219, 29%, 14%);
+}
+
+#kira-article {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+}
+
+.attribution {
+    color: hsl(219, 29%, 14%);
+    position: ;
+}
+
+@media (min-width: 775px) {
+    main {
+        width: 775;
+        height: 100vh;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 408px 250px 259px;
+        grid-template-areas:
+            "daniel patrick "
+            "jeanette jonathan"
+            "kira kira";
+        align-content: center;
+        justify-content: center;
+    }
+
+    article {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #daniel-article {
+        background-position: 190px 2px;
+        grid-area: daniel;
+    }
+
+    #jonathan-article {
+        grid-area: jonathan;
+    }
+
+    #jeanette-article {
+        grid-area: jeanette;
+    }
+
+    #patrick-article {
+        grid-area: patrick;
+    }
+
+    #kira-article {
+        grid-area: kira;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        height: 100vh;
+        grid-template-columns: 260px 260px 260px 260px;
+        grid-template-rows: 273px 250px;
+        grid-template-areas:
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+        align-content: center;
+        justify-content: center;
+    }
+
+    article {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #daniel-article {
+        background-position: 354px 2px;
+        grid-area: daniel;
+    }
+
+    #jonathan-article {
+        grid-area: jonathan;
+    }
+
+    #jeanette-article {
+        grid-area: jeanette;
+    }
+
+    #patrick-article {
+        grid-area: patrick;
+    }
+
+    #kira-article {
+        grid-area: kira;
+    }
+
+    .testimonial {
+        line-height: 1.23;
+    }
+}
